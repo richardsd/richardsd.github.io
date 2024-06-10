@@ -3,263 +3,257 @@
 #
 
 sidebar:
-    position: right # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    position: left # position of the sidebar : left or right
+    # about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
+    name: Ricardo Dias
+    tagline: Senior Software Engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    timezone: America/Cancun Timezone
-    citizenship:
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    xing: alandoe
-    github: sharu725
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    # email: hello@example.com
+    # phone: 012 345 6789
+    timezone: Portugal
+    # citizenship: Portuguese
+    # website: blog.webjeda.com #do not add http://
+    linkedin: ricardo-dias-34b77315
+    # xing: alandoe
+    github: richardsd
+    # telegram: # add your nickname without '@' sign
+    # gitlab:
+    # bitbucket:
+    # twitter: '@webjeda'
+    # stack-overflow: # Number/Username, e.g. 123456/alandoe
+    # codewars:
+    # goodreads: # Number-Username, e.g. 123456-alandoe
+    # pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
       title: Languages
       info:
-        - idiom: English
+        - idiom: Portuguese
           level: Native
 
-        - idiom: French
+        - idiom: English
           level: Professional
 
         - idiom: Spanish
-          level: Professional
+          level: Beginner
+
+        - idiom: French
+          level: Beginner
 
     interests:
       title: Interests
       info:
-        - item: Climbing
+        - item: Music, Concerts and Festivals
           link:
 
-        - item: Snowboarding
+        - item: Dance
           link:
 
-        - item: Cooking
+        - item: Traveling
           link:
 
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      Hello! I'm Ricardo, a Senior Software Developer based in Lisbon, Portugal,
+      with extensive experience in front-end development and content management systems. 
+      My expertise spans from Angular and Material Components to complex enterprise 
+      software solutions. Here, you will find a blend of my professional portfolio, 
+      academic endeavors, and insights into software development.
 education:
     title: Education
     info:
-      - degree: MSc in Computer Science
-        university: University of London
-        time: 2011 - 2012
-        details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
-        time: 2007 - 2011
-        details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+      - degree: PhD in Information Systems and Computer Engineering
+        university: Instituto Superior Técnico, University of Lisbon, Lisbon, Portugal
+        time: 2010 - 2016
+      - degree: MSc in Information Systems and Computer Engineering
+        university: Instituto Superior Técnico, University of Lisbon, Lisbon, Portugal
+        time: 2007 - 2009
+      - degree: BSc in Information Systems and Computer Engineering
+        university: Instituto Superior Técnico, University of Lisbon, Lisbon, Portugal
+        time: 2004 - 2007
 
 experiences:
-    title: Experiences
+    title: Professional Experience
     info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
+      - role: Senior Software Developer
+        time: 2021 - Present
+        company: Hyland Software, Portugal
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+          Front-end developer specializing in Angular and Material Components, working on the 
+          Hyland Experience Platform.
+          Involved in the full development lifecycle of features, including unit and e2e tests, and technical 
+          documentation, as well as on the onboarding process for new developers.
+          - **Technologies**: Angular, RxJs, NgRx, Material Components, TypeScript, 
+            HTML, CSS, NX, Node.js, Jasmine, Playwright, GitHub Actions.
+      - role: Software Developer
+        time: 2016 - 2021
+        company: Nuxeo, Portugal
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+          Participated in two different projects at Nuxeo:
+            - Nuxeo Studio Designer, a low-code application-building tool for Nuxeo's main UI.
+            - Nuxeo Web UI, and its Web Components library.
+          - **Technologies**: Java, Polymer, Lit HTML, HTML, JavaScript, CSS, Web Components, Karma, WebdriverIO, Cucumber, GitHub Actions.
+      - role: Software Developer - Graphical User Interface Expert
+        time: 2013
+        company: INESC-ID, VIMMI, Instituto Superior Técnico, Portugal
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-
-certifications:
-      title: Certifications
-      list:
-        - name: CV Builder
-          start: 2020
-          end: 2021
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.google.com
-          credentialname: Google
-          details: |
-            Details about cert. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-            fringilla vel. Ut euismod, sem sed vulputate venenatis,
-            justo diam viverra velit, sed rhoncus leo leo eu justo.
-            Suspendisse placerat risus ante, sed porta nisi blandit at.
-        - name: Git learning
-          start: 2019
-          end:
-          organization: Microsoft
-          credentialid: 111-222
-          credentialurl: www.github.com
-          credentialname: Github
-          details: |
-            Older certification. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-            Nullam eget orci purus. Nullam ultrices neque nibh.
-            Aenean fermentum, felis vulputate suscipit accumsan,
-            sem enim bibendum augue, sed convallis arcu lacus at dui.
-            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-            Praesent venenatis erat non augue suscipit consectetur.
-
-projects:
-    title: Projects
-    intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
-
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-    title: OSS Contributions
-    intro: >
-      You can list your open source software contributions in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-    contributions:
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+          Responsible for the development of the second version of GBTUL, a software for elastic buckling and vibration analyses.
+          Designed and implementated a GUI for managing GBT calculus and producing high-quality 2D and 3D outputs.
+          - **Technologies**: C#, Windows Forms, OpenGL (SharpGL), Zedgraph, GDI+, InstallShield LE, Git, VSCode.
+      - role: Software Developer - Research Assistant
+        time: 2010 - 2011
+        company: INESC-ID, VIMMI, inEvo, Portugal
+        details: |
+          Developed indexing structures, search and retrieval algorithms, and metadata extraction tools to integrate 
+          integrate into the Nuxeo Content Management Platform.
+          - **Technologies**: Java, OpenJPA, Android SDK, Maven, Nuxeo, Git, IntelliJ.
+      - role: Junior Software Developer
+        time: 2009 - 2010
+        company: Safira Consultadoria Informática, Portugal
+        details: |
+          Implementation and support of project management applications, customer relationship management solutions, and key performance indicators.
+          - **Technologies**: C#, ASP.NET, SQL Server, Reporting Services, Integration Services, Microsoft Project, CRM Dynamics.
 
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      Throughout my academic career, I have sought to bridge the gap between complex data processing and user-friendly
+      interfaces, enhancing the accessibility and usability of digital media. Myy research interests primarily focus 
+      on multimedia information retrieval, music recommendation systems, and interactive user interfaces.
     papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: "PlaylistCreator: An Assisted Approach for Playlist Creation"
+        # link: "#"
+        authors: Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca.
+        conference: International ACM Conference on Multimedia (MM'16), Amsterdam, Netherlands.
+      - title: "Encontra: a Generic Multimedia Information Retrieval Meta-framework"
+        # link: "#"
+        authors: Ricardo Dias, Manuel J. Fonseca, Nelson Silva, Tiago Cardoso.
+        conference: Multimedia Tools and Applications, Springer, Vol. 74, No. 11, pp. 3691–3713.
+      - title: Supporting Playlist Creation through Interactive Visualization
+        # link: "#"
+        authors: Ricardo Dias
+        conference: Doctoral Consortium at the 28th British HCI Conference, Southport, England (2014).
+      - title: Interactive Exploration of Music Listening Histories
+        # link: "#"
+        authors: Ricardo Dias, Manuel J. Fonseca, Daniel Gonçalves.
+        conference: International ACM Conference on Advanced Visual Interfaces (AVI '12), Capri, Italy.
+        
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+# certifications:
+#   title: Certifications
+#   list:
+#     - name: CV Builder
+#       start: 2020
+#       end: 2021
+#       organization: Microsoft
+#       credentialid: 111-222
+#       credentialurl: www.google.com
+#       credentialname: Google
+#       details: |
+#         Details about cert. Lorem ipsum dolor sit amet, consectetur
+#         adipiscing elit.
+#         Nullam eget orci purus. Nullam ultrices neque nibh.
+#         Aenean fermentum, felis vulputate suscipit accumsan,
+#         sem enim bibendum augue, sed convallis arcu lacus at dui.
+#         Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#         Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#         Praesent venenatis erat non augue suscipit consectetur.
 
-skills:
-    title: Skills &amp; Proficiency
+#         Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+#         fringilla vel. Ut euismod, sem sed vulputate venenatis,
+#         justo diam viverra velit, sed rhoncus leo leo eu justo.
+#         Suspendisse placerat risus ante, sed porta nisi blandit at.
 
-    toolset:
-      - name: Python & Django
-        level: 98%
+# skills:
+#     title: Skills &amp; Proficiency
 
-      - name: Javascript & jQuery
-        level: 98%
+#     toolset:
+#       - name: Python & Django
+#         level: 98%
 
-      - name: Angular
-        level: 98%
+#       - name: Javascript & jQuery
+#         level: 98%
 
-      - name: HTML5 & CSS
-        level: 95%
+#       - name: Angular
+#         level: 98%
 
-      - name: Ruby on Rails
-        level: 85%
+#       - name: HTML5 & CSS
+#         level: 95%
 
-      - name: Sketch & Photoshop
-        level: 60%
+#       - name: Ruby on Rails
+#         level: 85%
+
+#       - name: Sketch & Photoshop
+#         level: 60%
+
+# **PlaylistCreator: An Assisted Approach for Playlist Creation**
+# - **Authors**: Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca.
+# - **Published In**: Proceedings of the International ACM Conference on Multimedia (MM'16), Amsterdam, Netherlands.
+# - **Summary**: This paper presents PlaylistCreator, a tool designed to enhance the user experience in creating music playlists by incorporating interactive visualization techniques and user input. It discusses the tool’s development and its potential impact on personalized media consumption.
+# - **BibTeX**:
+#   ```bibtex
+#   @inproceedings{dias2016playlistcreator,
+#     title={PlaylistCreator: An Assisted Approach for Playlist Creation},
+#     author={Dias, Ricardo and Gonçalves, Daniel and Fonseca, Manuel J.},
+#     booktitle={Proceedings of the International ACM Conference on Multimedia},
+#     pages={711--713},
+#     year={2016},
+#     organization={ACM}
+#   }
+#   ```
+
+# **Encontra: a Generic Multimedia Information Retrieval Meta-framework**
+# - **Authors**: Ricardo Dias, Manuel J. Fonseca, Nelson Silva, Tiago Cardoso.
+# - **Published In**: Multimedia Tools and Applications, Springer, Vol. 74, No. 11, pp. 3691–3713.
+# - **Summary**: This article details the Encontra framework, a highly adaptable platform for multimedia information retrieval that supports a variety of data types and retrieval methodologies. It explores the framework’s architecture, implementation, and applications in real-world scenarios.
+# - **BibTeX**:
+#   ```bibtex
+#   @article{dias2013encontra,
+#     title={Encontra: a Generic Multimedia Information Retrieval Meta-framework},
+#     author={Dias, Ricardo and Fonseca, Manuel J. and Silva, Nelson and Cardoso, Tiago},
+#     journal={Multimedia Tools and Applications},
+#     volume={74},
+#     number={11},
+#     pages={3691--3713},
+#     year={2013},
+#     publisher={Springer}
+#   }
+#   ```
+
+# **From Manual to Assisted Playlist Creation**
+# - **Authors**: Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca.
+# - **Published In**: Multimedia Tools and Applications, Springer.
+# - **Summary**: This paper expands on previous work by introducing a semi-automated approach to playlist creation, reducing user effort and enhancing the personalization of playlists through automated suggestions based on user behavior and preferences.
+
+# **A User-centered Music Recommendation Approach for Daily Activities**
+# - **Authors**: Ricardo Dias, Ricardo Cunha, Manuel J. Fonseca.
+# - **Published In**: Workshop on New Trends in Content-Based Recommender Systems, Silicon Valley, USA.
+# - **Summary**: Discusses a novel user-centered approach to music recommendation that tailors suggestions to daily activities, enhancing user engagement and satisfaction with personalized music experiences.
+
+# **Supporting Playlist Creation through Interactive Visualization**
+# - **Authors**: Ricardo Dias.
+# - **Published In**: Doctoral Consortium at the 28th British HCI Conference, Southport.
+# - **Summary**: This work presents a visualization tool that supports users in the playlist creation process, offering interactive elements that allow users to visually manipulate and explore music collections effectively.
+
+# **Interactive Exploration of Music Listening Histories**
+# - **Authors**: Ricardo Dias, Manuel J. Fonseca, Daniel Gonçalves.
+# - **Published In**: Proceedings of the International ACM Conference on Advanced Visual Interfaces (AVI '12), Capri, Italy.
+# - **Summary**: Introduces a system for interactively exploring users’ music listening histories, providing insights into personal listening trends and facilitating the discovery of new music preferences.
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
