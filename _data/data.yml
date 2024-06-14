@@ -127,20 +127,24 @@ publications:
       interfaces, enhancing the accessibility and usability of digital media. Myy research interests primarily focus 
       on multimedia information retrieval, music recommendation systems, and interactive user interfaces.
     papers:
+      - title: "From manual to assisted playlist creation: a survey"
+        link: "https://web.ist.utl.pt/~daniel.j.goncalves/publications/2017/playlist_survey.pdf"
+        authors: Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca.
+        conference: Multimedia Tools and Applications, Springer, Vol 76, 14375–14403 (2017).
       - title: "PlaylistCreator: An Assisted Approach for Playlist Creation"
-        # link: "#"
+        link: "https://web.ist.utl.pt/~daniel.j.goncalves/publications/2016/p711-dias.pdf"
         authors: Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca.
         conference: International ACM Conference on Multimedia (MM'16), Amsterdam, Netherlands.
       - title: "Encontra: a Generic Multimedia Information Retrieval Meta-framework"
-        # link: "#"
+        link: "https://link.springer.com/article/10.1007/s11042-013-1794-0"
         authors: Ricardo Dias, Manuel J. Fonseca, Nelson Silva, Tiago Cardoso.
         conference: Multimedia Tools and Applications, Springer, Vol. 74, No. 11, pp. 3691–3713.
-      - title: Supporting Playlist Creation through Interactive Visualization
-        # link: "#"
+      - title: Interactive Visualization for Music Rediscovery and Serendipity
+        link: "https://dl.acm.org/doi/10.14236/ewic/hci2014.20"
         authors: Ricardo Dias
         conference: Doctoral Consortium at the 28th British HCI Conference, Southport, England (2014).
       - title: Interactive Exploration of Music Listening Histories
-        # link: "#"
+        link: "https://www.researchgate.net/publication/229472614_Interactive_Exploration_of_Music_Listening_Histories"
         authors: Ricardo Dias, Manuel J. Fonseca, Daniel Gonçalves.
         conference: International ACM Conference on Advanced Visual Interfaces (AVI '12), Capri, Italy.
         
