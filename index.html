@@ -1,23 +1,374 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ricardo Dias — Senior Software Engineer specializing in Angular, design systems, and front-end development. Based in Porto, Portugal.">
+  <meta name="author" content="Ricardo Dias">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ricardo Dias — Senior Software Engineer">
+  <meta property="og:description" content="Front-end specialist with a passion for design systems, testing, and creating delightful user experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://richardsd.github.io">
+  
+  <title>Ricardo Dias — Senior Software Engineer</title>
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#about" class="logo">Ricardo Dias</a>
+      
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#now">Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h1>Hey — I'm Ricardo</h1>
+            <p class="lead">
+              I'm a Senior Software Engineer based in Porto, Portugal, specializing in front-end development with Angular, design systems, and creating delightful user experiences.
+            </p>
+            <p>
+              With a PhD in Computer Engineering and over a decade of experience, I've worked on everything from enterprise content management platforms to low-code application builders. I care deeply about code quality, testing, performance, and building tools that make developers' lives easier.
+            </p>
+            <p>
+              When I'm not coding, you'll find me playing guitar, learning piano, practicing Spanish and French, or planning my next trip.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="assets/images/profile.png" alt="Ricardo Dias" />
+          </div>
+        </div>
+        
+        <!-- Recent Highlights -->
+        <div class="highlights">
+          <h2>Recent highlights</h2>
+          <ul class="highlights-list">
+            <li>
+              <strong>Leading front-end development</strong> on the Hyland Experience Platform, building accessible Angular components and design systems used by enterprise customers worldwide.
+            </li>
+            <li>
+              <strong>Championing testing practices</strong> — introduced comprehensive unit and E2E test coverage (Jasmine, Playwright) and mentored developers on testing best practices.
+            </li>
+            <li>
+              <strong>Published research</strong> on music recommendation systems and interactive visualization at ACM MM and Springer journals.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-{% include career-profile.html %}
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Featured projects</h2>
+        <div class="projects-grid">
+          
+          <article class="project-card">
+            <h3>Hyland Experience Platform</h3>
+            <p>Enterprise content management UI built with Angular and Material Components. Focused on design system development, accessibility, and developer experience.</p>
+            <p class="project-tech">Angular • TypeScript • RxJS • NgRx • Material • NX</p>
+          </article>
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+          <article class="project-card">
+            <h3>Nuxeo Studio Designer</h3>
+            <p>Low-code visual application builder for Nuxeo. Enabled non-developers to create custom UIs through drag-and-drop components.</p>
+            <p class="project-tech">Polymer • Web Components • JavaScript</p>
+          </article>
 
-{% include experiences.html %}
+          <article class="project-card">
+            <h3>WODMaster</h3>
+            <p>Personal workout tracking app for CrossFit athletes. Track workouts, PRs, and progress over time.</p>
+            <p class="project-tech">Angular • TypeScript • Firebase</p>
+            <a href="https://github.com/richardsd" class="project-link" aria-label="View WODMaster on GitHub">View project →</a>
+          </article>
 
-{% include certifications.html %}
+          <article class="project-card">
+            <h3>The Daily Log</h3>
+            <p>Simple work logging tool to track what you did each day. Helps with stand-ups and performance reviews.</p>
+            <p class="project-tech">HTML • CSS • JavaScript</p>
+            <a href="https://github.com/richardsd" class="project-link" aria-label="View Daily Log on GitHub">View project →</a>
+          </article>
 
-{% include projects.html %}
+          <article class="project-card">
+            <h3>Meal Planner</h3>
+            <p>Weekly meal planning app with grocery list generation. Makes meal prep less stressful.</p>
+            <p class="project-tech">Angular • TypeScript</p>
+            <a href="https://github.com/richardsd" class="project-link" aria-label="View Meal Planner on GitHub">View project →</a>
+          </article>
 
-{% include oss-contributions.html %}
+          <article class="project-card">
+            <h3>PlaylistCreator</h3>
+            <p>Research project exploring assisted playlist creation through interactive visualization. Published at ACM Multimedia 2016.</p>
+            <p class="project-tech">Java • JavaScript • Visualization</p>
+            <a href="https://dl.acm.org/doi/10.1145/2964284.2967238" class="project-link">Read paper →</a>
+          </article>
+          
+        </div>
+      </div>
+    </section>
 
-{% include publications.html %}
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2>Experience</h2>
+        
+        <div class="timeline">
+          
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Software Developer</h3>
+                <span class="timeline-company">Hyland Software, Portugal</span>
+                <span class="timeline-period">2021 — Present</span>
+              </div>
+              <p>
+                Front-end developer specializing in Angular and Material Components, working on the Hyland Experience Platform. Involved in the full development lifecycle of features, including unit and E2E tests, technical documentation, and onboarding new developers.
+              </p>
+              <p class="timeline-tech">
+                <strong>Technologies:</strong> Angular, RxJS, NgRx, Material Components, TypeScript, HTML, CSS, NX, Node.js, Jasmine, Playwright, GitHub Actions
+              </p>
+            </div>
+          </article>
 
-{% include skills.html %}
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Developer</h3>
+                <span class="timeline-company">Nuxeo, Portugal</span>
+                <span class="timeline-period">2016 — 2021</span>
+              </div>
+              <p>
+                Participated in two projects: Nuxeo Studio Designer (a low-code application-building tool) and Nuxeo Web UI (Web Components library for content management).
+              </p>
+              <p class="timeline-tech">
+                <strong>Technologies:</strong> Java, Polymer, Lit HTML, HTML, JavaScript, CSS, Web Components, Karma, WebdriverIO, Cucumber, GitHub Actions
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>GUI Developer</h3>
+                <span class="timeline-company">INESC-ID, IST, Portugal</span>
+                <span class="timeline-period">2013</span>
+              </div>
+              <p>
+                Developed GBTUL 2.0, software for elastic buckling and vibration analyses. Designed and implemented a GUI for managing calculations and producing high-quality 2D and 3D visualizations.
+              </p>
+              <p class="timeline-tech">
+                <strong>Technologies:</strong> C#, Windows Forms, OpenGL (SharpGL), Zedgraph, GDI+
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Research Assistant</h3>
+                <span class="timeline-company">INESC-ID, inEvo, Portugal</span>
+                <span class="timeline-period">2010 — 2011</span>
+              </div>
+              <p>
+                Developed indexing structures, search and retrieval algorithms, and metadata extraction tools for integration with the Nuxeo Content Management Platform.
+              </p>
+              <p class="timeline-tech">
+                <strong>Technologies:</strong> Java, OpenJPA, Android SDK, Maven, Nuxeo
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Junior Software Developer</h3>
+                <span class="timeline-company">Safira Consultadoria Informática, Portugal</span>
+                <span class="timeline-period">2009 — 2010</span>
+              </div>
+              <p>
+                Implementation and support of project management applications, CRM solutions, and KPI dashboards.
+              </p>
+              <p class="timeline-tech">
+                <strong>Technologies:</strong> C#, ASP.NET, SQL Server, Reporting Services, Microsoft Project, CRM Dynamics
+              </p>
+            </div>
+          </article>
+          
+        </div>
+        
+        <!-- Education -->
+        <div class="education">
+          <h3>Education</h3>
+          <ul class="education-list">
+            <li>
+              <strong>PhD in Computer Engineering</strong>, Instituto Superior Técnico, University of Lisbon (2010–2016)
+            </li>
+            <li>
+              <strong>MSc in Computer Engineering</strong>, Instituto Superior Técnico, University of Lisbon (2007–2009)
+            </li>
+            <li>
+              <strong>BSc in Computer Engineering</strong>, Instituto Superior Técnico, University of Lisbon (2004–2007)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+      <div class="container">
+        <h2>Selected publications</h2>
+        <p class="section-intro">
+          My research focused on multimedia information retrieval, music recommendation systems, and interactive visualization — bridging complex data processing with user-friendly interfaces.
+        </p>
+        
+        <ul class="publications-list">
+          <li class="publication-item">
+            <h3 class="publication-title">From manual to assisted playlist creation: a survey</h3>
+            <p class="publication-authors">Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca</p>
+            <p class="publication-venue">Multimedia Tools and Applications, Springer, Vol 76, 14375–14403 (2017)</p>
+            <a href="https://web.ist.utl.pt/~daniel.j.goncalves/publications/2017/playlist_survey.pdf" class="publication-link">Read paper →</a>
+          </li>
+          
+          <li class="publication-item">
+            <h3 class="publication-title">PlaylistCreator: An Assisted Approach for Playlist Creation</h3>
+            <p class="publication-authors">Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca</p>
+            <p class="publication-venue">ACM International Conference on Multimedia (MM'16), Amsterdam, Netherlands</p>
+            <a href="https://web.ist.utl.pt/~daniel.j.goncalves/publications/2016/p711-dias.pdf" class="publication-link">Read paper →</a>
+          </li>
+          
+          <li class="publication-item">
+            <h3 class="publication-title">Encontra: a Generic Multimedia Information Retrieval Meta-framework</h3>
+            <p class="publication-authors">Ricardo Dias, Manuel J. Fonseca, Nelson Silva, Tiago Cardoso</p>
+            <p class="publication-venue">Multimedia Tools and Applications, Springer, Vol. 74, No. 11, pp. 3691–3713</p>
+            <a href="https://link.springer.com/article/10.1007/s11042-013-1794-0" class="publication-link">Read paper →</a>
+          </li>
+          
+          <li class="publication-item">
+            <h3 class="publication-title">Interactive Visualization for Music Rediscovery and Serendipity</h3>
+            <p class="publication-authors">Ricardo Dias</p>
+            <p class="publication-venue">Doctoral Consortium at the 28th British HCI Conference, Southport, England (2014)</p>
+            <a href="https://dl.acm.org/doi/10.14236/ewic/hci2014.20" class="publication-link">Read paper →</a>
+          </li>
+          
+          <li class="publication-item">
+            <h3 class="publication-title">Interactive Exploration of Music Listening Histories</h3>
+            <p class="publication-authors">Ricardo Dias, Manuel J. Fonseca, Daniel Gonçalves</p>
+            <p class="publication-venue">ACM Conference on Advanced Visual Interfaces (AVI '12), Capri, Italy</p>
+            <a href="https://www.researchgate.net/publication/229472614_Interactive_Exploration_of_Music_Listening_Histories" class="publication-link">Read paper →</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Now Section -->
+    <section id="now" class="section now-section">
+      <div class="container">
+        <h2>What I'm up to now</h2>
+        <p class="section-intro">
+          Inspired by Derek Sivers' <a href="https://nownownow.com/about" target="_blank" rel="noopener">/now page</a> movement — here's what I'm currently exploring and learning.
+        </p>
+        
+        <div class="now-grid">
+          <div class="now-item">
+            <h3>🎸 Music</h3>
+            <p>Still playing guitar regularly and working on piano fundamentals. Currently learning jazz standards and working on improvisation.</p>
+          </div>
+          
+          <div class="now-item">
+            <h3>🗣️ Languages</h3>
+            <p>Practicing Spanish and French through apps, podcasts, and conversation exchanges. Goal: conversational fluency by end of year.</p>
+          </div>
+          
+          <div class="now-item">
+            <h3>💻 Tech tinkering</h3>
+            <p>Exploring performance optimization in Angular, diving deeper into accessibility testing, and building small useful tools.</p>
+          </div>
+          
+          <div class="now-item">
+            <h3>✈️ Travel</h3>
+            <p>Planning trips around Portugal and Europe. Always looking for good food, live music, and interesting architecture.</p>
+          </div>
+        </div>
+        
+        <p class="now-updated">Last updated: February 2026</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Let's connect</h2>
+        <p class="section-intro">
+          I'm always happy to chat about front-end development, design systems, testing, or music recommendation algorithms.
+        </p>
+        
+        <div class="contact-links">
+          <a href="https://github.com/richardsd" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon">→</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ricardo-dias-34b77315" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon">→</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:hello@example.com" class="contact-link">
+            <span class="contact-icon">→</span>
+            <span>Email</span>
+          </a>
+          <a href="assets/cv.pdf" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-icon">→</span>
+            <span>Download CV</span>
+          </a>
+        </div>
+        
+        <p class="contact-location">
+          📍 Based in Porto, Portugal
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Ricardo Dias. Built with care, no framework required.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 

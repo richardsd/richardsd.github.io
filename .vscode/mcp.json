@@ -1,0 +1,12 @@
+{
+	"servers": {
+		"a11y-axe-core": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"a11y-mcp"
+			]
+		}
+	},
+	"inputs": []
+}
