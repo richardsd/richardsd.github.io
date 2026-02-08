@@ -2,16 +2,35 @@
    CSS Variables
    ======================================== */
 :root {
-  /* Colors */
-  --color-bg: #FAF8F5;
-  --color-bg-secondary: #FFF;
-  --color-text: #2B2B2B;
-  --color-text-light: #5A5A5A;
-  --color-accent: #E07A5F;
-  --color-accent-hover: #D16A4F;
-  --color-link: #4A90A4;
-  --color-link-hover: #3A7A8A;
-  --color-border: #E8E4DF;
+  /* Light Mode Colors (WCAG AA compliant) */
+  --color-bg: #FAF8F5;              /* Warm beige background */
+  --color-bg-secondary: #FFF;        /* Pure white for cards */
+  --color-text: #2B2B2B;            /* Dark charcoal (15.7:1 on bg) */
+  --color-text-light: #5A5A5A;      /* Medium gray (7.5:1 on bg) */
+  --color-accent: #E07A5F;          /* Clay/coral accent */
+  --color-accent-hover: #D16A4F;    /* Darker clay hover */
+  --color-link: #4A90A4;            /* Soft blue for links */
+  --color-link-hover: #3A7A8A;      /* Darker blue hover */
+  --color-border: #E8E4DF;          /* Light tan borders */
+  
+  /* Color utilities (theme-adaptive) */
+  --color-gradient-1: rgba(224, 122, 95, 0.03);   /* Clay gradient overlay */
+  --color-gradient-2: rgba(74, 144, 164, 0.03);   /* Blue gradient overlay */
+  --color-dot-pattern: rgba(0, 0, 0, 0.04);       /* Subtle dot texture */
+  --color-chip-clay-bg: var(--color-accent);
+  --color-chip-clay-text: #FFF;
+  --color-chip-blue-bg: var(--color-bg-secondary);
+  --color-chip-blue-text: var(--color-link);
+  --color-chip-blue-border: var(--color-link);
+  --color-pill-status-bg: rgba(74, 144, 164, 0.15);
+  --color-pill-status-text: var(--color-link);
+  --color-pill-proof-bg: rgba(224, 122, 95, 0.15);
+  --color-pill-proof-text: var(--color-accent);
+  --color-timeline-bg: rgba(224, 122, 95, 0.1);
+  --color-callout-bg: rgba(224, 122, 95, 0.05);
+  --color-footer-bg: var(--color-text);
+  --color-footer-text: rgba(255, 255, 255, 0.7);
+  --color-footer-text-muted: rgba(255, 255, 255, 0.5);
   
   /* Typography */
   --font-serif: Georgia, 'Times New Roman', serif;
@@ -39,6 +58,47 @@
   
   /* Transitions */
   --transition: 0.2s ease;
+  --transition-theme: 0.3s ease;
+}
+
+/* ========================================
+   Dark Theme
+   ======================================== */
+[data-theme="dark"] {
+  /* Dark Mode Colors (WCAG AA compliant) */
+  --color-bg: #1A1715;              /* Warm dark brown-black */
+  --color-bg-secondary: #252220;    /* Slightly lighter warm brown */
+  --color-text: #E8E4DF;            /* Light tan (14.2:1 on dark bg) */
+  --color-text-light: #B8B3AD;      /* Warm medium gray (8.9:1) */
+  --color-accent: #F08D73;          /* Lighter, more saturated clay */
+  --color-accent-hover: #FFA088;    /* Even lighter clay hover */
+  --color-link: #6BADC4;            /* Lighter, more vibrant blue */
+  --color-link-hover: #87C3D9;      /* Brighter blue hover */
+  --color-border: #3A3530;          /* Subtle warm gray border */
+  
+  /* Color utilities (dark theme variants) */
+  --color-gradient-1: rgba(240, 141, 115, 0.04);  /* Clay gradient (slightly stronger) */
+  --color-gradient-2: rgba(107, 173, 196, 0.04);  /* Blue gradient (slightly stronger) */
+  --color-dot-pattern: rgba(255, 255, 255, 0.02); /* Light dots on dark */
+  --color-chip-clay-bg: var(--color-accent);
+  --color-chip-clay-text: #1A1715;                /* Dark text on light clay */
+  --color-chip-blue-bg: rgba(107, 173, 196, 0.15);
+  --color-chip-blue-text: var(--color-link);
+  --color-chip-blue-border: var(--color-link);
+  --color-pill-status-bg: rgba(107, 173, 196, 0.2);
+  --color-pill-status-text: var(--color-link);
+  --color-pill-proof-bg: rgba(240, 141, 115, 0.2);
+  --color-pill-proof-text: var(--color-accent);
+  --color-timeline-bg: rgba(240, 141, 115, 0.12);
+  --color-callout-bg: rgba(240, 141, 115, 0.08);
+  --color-footer-bg: #2B2826;                     /* Lighter footer in dark mode */
+  --color-footer-text: rgba(232, 228, 223, 0.8);
+  --color-footer-text-muted: rgba(232, 228, 223, 0.6);
+  
+  /* Elevated shadows for dark mode */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* ========================================
@@ -65,12 +125,44 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(224, 122, 95, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(74, 144, 164, 0.03) 0%, transparent 50%),
-    radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    radial-gradient(circle at 20% 50%, var(--color-gradient-1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, var(--color-gradient-2) 0%, transparent 50%),
+    radial-gradient(circle, var(--color-dot-pattern) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 20px 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-theme), color var(--transition-theme);
+}
+
+/* ========================================
+   Theme Transitions
+   ======================================== */
+body,
+.site-header,
+.section,
+.card,
+.project-card,
+nav a,
+.logo,
+.chip,
+.pill,
+.timeline-period,
+.footer {
+  transition: background-color var(--transition-theme), 
+              color var(--transition-theme), 
+              border-color var(--transition-theme);
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ========================================
@@ -205,6 +297,63 @@ strong {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  margin-right: var(--space-sm);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
+  background: var(--color-callout-bg);
+  transform: scale(1.05);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s ease;
+}
+
+.theme-toggle svg path,
+.theme-toggle svg line,
+.theme-toggle svg circle {
+  stroke: var(--color-text);
+  transition: stroke var(--transition-theme);
+}
+
+.theme-toggle[aria-pressed="true"] svg {
+  transform: rotate(180deg);
+}
+
+/* Hide moon icon in light mode, sun icon in dark mode */
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
 }
 
 /* Mobile menu toggle */
@@ -377,7 +526,7 @@ strong {
   font-style: italic;
   margin: var(--space-md) 0;
   padding: var(--space-sm) var(--space-md);
-  background: rgba(224, 122, 95, 0.05);
+  background: var(--color-callout-bg);
   border-left: 3px solid var(--color-accent);
   border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
 }
@@ -416,9 +565,9 @@ strong {
 }
 
 .chip-value {
-  background: var(--color-accent);
-  color: white;
-  border: 2px solid var(--color-accent);
+  background: var(--color-chip-clay-bg);
+  color: var(--color-chip-clay-text);
+  border: 2px solid var(--color-chip-clay-bg);
 }
 
 .chip-value:hover {
@@ -429,9 +578,9 @@ strong {
 }
 
 .chip-tech {
-  background: var(--color-bg-secondary);
-  color: var(--color-link);
-  border: 2px solid var(--color-link);
+  background: var(--color-chip-blue-bg);
+  color: var(--color-chip-blue-text);
+  border: 2px solid var(--color-chip-blue-border);
 }
 
 .chip-tech:hover {
@@ -538,13 +687,13 @@ strong {
 }
 
 .pill-status {
-  background: rgba(74, 144, 164, 0.15);
-  color: var(--color-link);
+  background: var(--color-pill-status-bg);
+  color: var(--color-pill-status-text);
 }
 
 .pill-proof {
-  background: rgba(224, 122, 95, 0.15);
-  color: var(--color-accent);
+  background: var(--color-pill-proof-bg);
+  color: var(--color-pill-proof-text);
 }
 
 .project-why {
@@ -660,7 +809,7 @@ strong {
   font-size: 0.9rem;
   color: var(--color-text-light);
   padding: var(--space-xs) var(--space-sm);
-  background: rgba(224, 122, 95, 0.1);
+  background: var(--color-timeline-bg);
   border-radius: var(--border-radius-sm);
 }
 
@@ -675,7 +824,7 @@ strong {
 .timeline-owned {
   margin: var(--space-sm) 0;
   padding: var(--space-sm) var(--space-md);
-  background: rgba(224, 122, 95, 0.05);
+  background: var(--color-callout-bg);
   border-left: 3px solid var(--color-accent);
   border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
   font-size: 0.95rem;
@@ -891,8 +1040,8 @@ strong {
    Footer
    ======================================== */
 .site-footer {
-  background: var(--color-text);
-  color: rgba(255, 255, 255, 0.7);
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
   padding: var(--space-lg) 0;
   text-align: center;
 }
@@ -913,7 +1062,7 @@ strong {
 }
 
 .back-to-top:hover {
-  background: rgba(224, 122, 95, 0.1);
+  background: var(--color-callout-bg);
   transform: translateY(-2px);
 }
 

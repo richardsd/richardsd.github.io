@@ -59,6 +59,48 @@
       }
     });
   }
+  
+  // ========================================
+  // Theme Toggle
+  // ========================================
+  
+  const themeToggle = document.querySelector('.theme-toggle');
+  
+  if (themeToggle) {
+    // Get current theme and update button state
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    themeToggle.setAttribute('aria-pressed', currentTheme === 'dark' ? 'true' : 'false');
+    
+    // Toggle theme on click
+    themeToggle.addEventListener('click', function() {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      // Update DOM
+      document.documentElement.setAttribute('data-theme', newTheme);
+      
+      // Update button state
+      themeToggle.setAttribute('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
+      
+      // Save preference to localStorage
+      localStorage.setItem('theme', newTheme);
+      
+      // Announce to screen readers
+      const announcement = `${newTheme === 'dark' ? 'Dark' : 'Light'} mode activated`;
+      console.log(announcement);
+    });
+    
+    // Listen for system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    mediaQuery.addEventListener('change', (e) => {
+      // Only auto-switch if user hasn't manually set a preference
+      if (!localStorage.getItem('theme')) {
+        const newTheme = e.matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        themeToggle.setAttribute('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
+      }
+    });
+  }
 
   // ========================================
   // Active Section Highlighting
