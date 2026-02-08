@@ -142,6 +142,8 @@ body,
 .section,
 .card,
 .project-card,
+.info-card,
+.about-bio,
 nav a,
 .logo,
 .chip,
@@ -491,25 +493,28 @@ strong {
   padding-top: var(--space-2xl);
 }
 
-.about-content {
+/* Hero area with intro and image */
+.about-hero {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   grid-template-columns: 1fr;
   margin-bottom: var(--space-xl);
+  align-items: start;
 }
 
 @media (min-width: 768px) {
-  .about-content {
+  .about-hero {
     grid-template-columns: 2fr 1fr;
-    align-items: start;
   }
 }
 
-.about-text p {
+.about-hero-text .lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
   margin-bottom: var(--space-md);
 }
 
-.about-image img {
+.about-hero-image img {
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -519,7 +524,7 @@ strong {
   margin: 0 auto;
 }
 
-/* Currently into */
+/* Currently into callout */
 .currently-into {
   font-size: 1rem;
   color: var(--color-text-light);
@@ -531,21 +536,58 @@ strong {
   border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
 }
 
-/* Values and Tech sections */
-.values-section,
-.tech-section {
-  margin: var(--space-lg) 0;
+/* Info cards grid for values and tech */
+.info-cards-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+  margin-bottom: var(--space-xl);
 }
 
-.values-heading,
-.tech-heading {
+@media (min-width: 768px) {
+  .info-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.info-card {
+  background: var(--color-bg-secondary);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.info-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.info-card-heading {
   font-size: 1rem;
   font-family: var(--font-sans);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-light);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Bio section */
+.about-bio {
+  background: var(--color-callout-bg);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  margin-top: var(--space-xl);
+}
+
+.about-bio p {
+  margin: 0;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 /* Chips */
