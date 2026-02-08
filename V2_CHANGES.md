@@ -206,7 +206,7 @@ Examples:
 ## Before/After Tone Comparison
 
 ### Hero
-**Before:** "I'm a Senior Software Engineer based in Porto, Portugal..."  
+**Before:** "I'm a Senior Software Engineer based in Lisbon, Portugal..."  
 **After:** "I build front-end tools that people actually enjoy using."
 
 ### Highlights

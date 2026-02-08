@@ -121,7 +121,7 @@ Wait 2-3 minutes, then visit: **https://richardsd.github.io**
 4. **Verify content accuracy**:
    - Double-check all job dates, titles, descriptions
    - Review education details
-   - Confirm location (currently says Porto)
+   - Confirm location (currently says Lisbon)
 
 5. **Update profile photo** (optional):
    - Replace `assets/images/profile.png` with a better photo
