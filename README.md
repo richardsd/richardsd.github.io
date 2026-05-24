@@ -8,7 +8,7 @@ Personal website and portfolio of **Ricardo Dias**, Senior Software Engineer bas
 
 ## About
 
-A single-file personal site and CV — no framework, no build step, no dependencies beyond Google Fonts. Everything (HTML, CSS, JS) lives in `index.html`.
+A single-file personal-professional portfolio — no framework, no build step, no dependencies beyond Google Fonts. Everything (HTML, CSS, JS) lives in `index.html`.
 
 **Design highlights:**
 - Electric Teal & Midnight colour palette with full dark/light theme toggle (system preference detected on first load)
@@ -30,15 +30,13 @@ A single-file personal site and CV — no framework, no build step, no dependenc
 ```
 
 **Sections (in order):**
-1. About — bio, languages (CEFR), stats
-2. Experience — professional timeline
-3. Projects — side projects, forks, and AI experiments
-4. Skills — grouped by domain
-5. Education — PhD, MSc, BSc at IST Lisbon
-6. Publications — 7 academic papers with links
-7. Teaching — MSc supervision and lab instruction at IST
-8. Certifications — Coursera and Udemy courses
-9. Conferences — presenter, attendee, and volunteer history
+1. What I care about — present-day narrative, languages, and focus themes
+2. Selected work and explorations — AI workflows, generative UI, frontend architecture, and personal tools
+3. Professional experience — Hyland, Nuxeo, and earlier engineering work
+4. Research and publications — music recommendation, discovery, visualisation, and interaction
+5. Skills and focus areas — current focus, strong background, and exploring
+6. Education — PhD, MSc, BSc, plus lighter academic/community context
+7. Personal notes — curiosity, music, languages, travel, and learning by building
 
 ---
 
@@ -61,15 +59,13 @@ All content is in `index.html`. Key landmarks to navigate the file:
 | Section | Search for |
 |---|---|
 | Hero / profile card | `<!-- HERO -->` |
-| About | `<!-- ABOUT -->` |
-| Experience | `<!-- EXPERIENCE -->` |
-| Projects | `<!-- PROJECTS -->` |
-| Skills | `<!-- SKILLS -->` |
+| What I care about | `<!-- WHAT I CARE ABOUT -->` |
+| Selected work and explorations | `<!-- SELECTED WORK AND EXPLORATIONS -->` |
+| Professional experience | `<!-- PROFESSIONAL EXPERIENCE -->` |
+| Research and publications | `<!-- RESEARCH AND PUBLICATIONS -->` |
+| Skills and focus areas | `<!-- SKILLS AND FOCUS AREAS -->` |
 | Education | `<!-- EDUCATION -->` |
-| Publications | `<!-- PUBLICATIONS -->` |
-| Teaching | `<!-- TEACHING -->` |
-| Certifications | `<!-- CERTIFICATIONS -->` |
-| Conferences | `<!-- CONFERENCES -->` |
+| Personal notes | `<!-- PERSONAL NOTES -->` |
 | Design tokens (colours) | `[data-theme="dark"]` / `[data-theme="light"]` |
 
 ---
@@ -78,6 +74,7 @@ All content is in `index.html`. Key landmarks to navigate the file:
 
 | Date | Changes |
 |---|---|
+| 2026-05 | Reframed the page from CV-style structure to a present-day personal-professional portfolio |
 | 2025-03 | Full redesign — new palette, typography, layout, animations |
 | 2025-03 | Added Projects, Teaching, Certifications, Conferences sections |
 | 2025-03 | Added all 7 publications, CEFR language levels, meta/OG tags, favicon |
