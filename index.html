@@ -734,21 +734,31 @@
     }
 
     /* Languages */
-    .lang-grid {
+    .language-note {
       margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .language-note p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .lang-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
+      gap: 0.55rem 0.75rem;
     }
     .lang-item {
       display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-    .lang-header {
-      display: flex;
       justify-content: space-between;
       align-items: baseline;
+      gap: 0.75rem;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.45rem 0.65rem;
     }
     .lang-name {
       font-size: 0.85rem;
@@ -760,21 +770,6 @@
       color: var(--text-muted);
       font-family: 'DM Mono', monospace;
     }
-    .lang-bar {
-      height: 3px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
-    .lang-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      border-radius: 2px;
-      transform-origin: left;
-      transform: scaleX(0);
-      transition: transform 1s var(--ease-out-expo);
-    }
-    .lang-fill.animate { transform: scaleX(1); }
 
     /* ============================================================
        EXPERIENCE / TIMELINE
@@ -998,6 +993,13 @@
       background: var(--card-hover);
       border-color: var(--border-accent);
       transform: translateX(4px);
+    }
+    .pub-card-featured {
+      border-color: var(--border-accent);
+      background: linear-gradient(135deg, var(--card-bg), var(--tag-bg));
+    }
+    .pub-card-featured .pub-title {
+      font-size: 1.08rem;
     }
 
     .pub-title {
@@ -1570,24 +1572,6 @@
             self-improvement because good software is rarely just about code. It is about shared understanding.
           </p>
 
-          <div class="lang-grid">
-            <div class="lang-item">
-              <div class="lang-header"><span class="lang-name">Portuguese</span><span class="lang-level">Native</span></div>
-              <div class="lang-bar"><div class="lang-fill" data-width="1"></div></div>
-            </div>
-            <div class="lang-item">
-              <div class="lang-header"><span class="lang-name">English</span><span class="lang-level">C1</span></div>
-              <div class="lang-bar"><div class="lang-fill" data-width="0.9"></div></div>
-            </div>
-            <div class="lang-item">
-              <div class="lang-header"><span class="lang-name">Spanish</span><span class="lang-level">A2/B1</span></div>
-              <div class="lang-bar"><div class="lang-fill" data-width="0.42"></div></div>
-            </div>
-            <div class="lang-item">
-              <div class="lang-header"><span class="lang-name">French</span><span class="lang-level">A2</span></div>
-              <div class="lang-bar"><div class="lang-fill" data-width="0.3"></div></div>
-            </div>
-          </div>
         </div>
 
         <div class="about-stats reveal reveal-delay-2">
@@ -1832,7 +1816,7 @@
   <section id="research">
     <div class="section-inner">
       <div class="section-header reveal">
-        <span class="section-eyebrow">04 / Research and publications</span>
+        <span class="section-eyebrow">04 / Selected publications</span>
         <h2 class="section-title">Discovery, music,<br/>and human interaction.</h2>
         <p class="section-subtitle">
           My research background still shapes how I think about software: recommendation, serendipity,
@@ -1842,7 +1826,7 @@
 
       <div class="pub-list">
 
-        <div class="pub-card reveal reveal-delay-1">
+        <div class="pub-card pub-card-featured reveal reveal-delay-1">
           <div>
             <div class="pub-title">From manual to assisted playlist creation: a survey</div>
             <div class="pub-authors">Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca</div>
@@ -1851,7 +1835,7 @@
           <a href="https://web.ist.utl.pt/~daniel.j.goncalves/publications/2017/playlist_survey.pdf" target="_blank" rel="noopener noreferrer" class="pub-link" title="Read paper">↗</a>
         </div>
 
-        <div class="pub-card reveal reveal-delay-2">
+        <div class="pub-card pub-card-featured reveal reveal-delay-2">
           <div>
             <div class="pub-title">PlaylistCreator: An Assisted Approach for Playlist Creation</div>
             <div class="pub-authors">Ricardo Dias, Daniel Gonçalves, Manuel J. Fonseca</div>
@@ -1971,7 +1955,7 @@
     <div class="section-inner">
       <div class="section-header reveal">
         <span class="section-eyebrow">06 / Education</span>
-        <h2 class="section-title">Academic roots,<br/>kept in proportion.</h2>
+        <h2 class="section-title">Academic roots,<br/>still shaping how I think.</h2>
         <p class="section-subtitle">
           The research path behind my work in recommendation, visualisation, and human interaction with software.
         </p>
@@ -2058,9 +2042,19 @@
             The engineering work I respect most creates shared understanding. Code matters, but so do naming,
             documentation, review habits, product context, and the way a system helps people reason together.
           </p>
+
+          <div class="language-note">
+            <p>Languages are part of how I keep curiosity active: Portuguese, English, Spanish, and French.</p>
+            <div class="lang-grid" aria-label="Language levels">
+              <div class="lang-item"><span class="lang-name">Portuguese</span><span class="lang-level">Native</span></div>
+              <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">C1</span></div>
+              <div class="lang-item"><span class="lang-name">Spanish</span><span class="lang-level">A2/B1</span></div>
+              <div class="lang-item"><span class="lang-name">French</span><span class="lang-level">A2</span></div>
+            </div>
+          </div>
         </div>
         <div class="timeline-card reveal reveal-delay-2">
-          <div class="timeline-role">Current personal thread</div>
+          <div class="timeline-role">Personal rhythm</div>
           <div class="timeline-desc">
             Tools for reflection, creativity, communication, and self-improvement: local-first capture,
             Markdown-based thinking, AI-assisted review, language learning, music, and practical routines.
@@ -2133,30 +2127,11 @@
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.classList.add('visible');
-          // Animate language bars when in view
-          e.target.querySelectorAll('.lang-fill').forEach(bar => {
-            bar.classList.add('animate');
-          });
         }
       });
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Also observe the care section directly for language bars
-    const careSection = document.getElementById('care');
-    if (careSection) {
-      const langObserver = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.querySelectorAll('.lang-fill').forEach(bar => {
-              bar.style.transform = `scaleX(${bar.dataset.width})`;
-            });
-          }
-        });
-      }, { threshold: 0.2 });
-      langObserver.observe(careSection);
-    }
 
     // ── Active nav link on scroll ─────────────────────────────
     const sections = document.querySelectorAll('section[id]');
