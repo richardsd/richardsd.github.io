@@ -1265,6 +1265,20 @@
       background: linear-gradient(135deg, var(--bg-3), var(--surface));
     }
 
+    .portfolio-thumb[data-visual="architecture"].has-image .portfolio-image {
+      transform: scale(1.46);
+      transform-origin: 50% 40%;
+    }
+
+    .portfolio-visual[data-visual="architecture"].has-image {
+      background: #030713;
+    }
+
+    .portfolio-visual[data-visual="architecture"].has-image .portfolio-image {
+      object-fit: contain;
+      background: #030713;
+    }
+
     .portfolio-option-title {
       display: block;
       font-family: 'DM Serif Display', serif;
@@ -1929,7 +1943,9 @@
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-frontend-architecture" data-project="frontend-architecture">
-            <span class="portfolio-thumb" data-visual="architecture" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="architecture" aria-hidden="true">
+              <img src="assets/projects/backend-agnostic-frontend-architecture.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">Backend-agnostic frontend architecture</span>
               <span class="portfolio-option-summary">Domain layers and adapters that keep UI concepts portable.</span>
@@ -2470,6 +2486,10 @@
       'frontend-architecture': {
         tabId: 'project-tab-frontend-architecture',
         visual: 'architecture',
+        image: {
+          src: 'assets/projects/backend-agnostic-frontend-architecture.webp',
+          alt: 'Abstract layered architecture diagram showing a UI layer connected through domain and adapter layers to multiple content platforms.'
+        },
         category: 'Architecture',
         title: 'Backend-agnostic frontend architecture',
         description: 'Separating UI concepts from backend-specific document models and APIs through domain layers, adapters, and dependency injection.',
