@@ -1245,6 +1245,26 @@
       flex-shrink: 0;
     }
 
+    .portfolio-image {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .portfolio-thumb.has-image::before,
+    .portfolio-thumb.has-image::after,
+    .portfolio-visual.has-image::before,
+    .portfolio-visual.has-image::after {
+      display: none;
+    }
+
+    .portfolio-visual[data-visual="productivity"].has-image .portfolio-image {
+      object-fit: contain;
+      background: linear-gradient(135deg, var(--bg-3), var(--surface));
+    }
+
     .portfolio-option-title {
       display: block;
       font-family: 'DM Serif Display', serif;
@@ -1276,6 +1296,7 @@
     }
 
     .portfolio-visual {
+      height: 260px;
       min-height: 260px;
       border-width: 0 0 1px;
       border-radius: 0;
@@ -1606,6 +1627,7 @@
 
     @media (max-width: 700px) {
       .portfolio-visual {
+        height: 190px;
         min-height: 190px;
       }
       .portfolio-copy {
@@ -1889,14 +1911,18 @@
       <div class="portfolio-shell reveal reveal-delay-1">
         <div class="portfolio-selector" role="tablist" aria-label="Selected work and explorations">
           <button class="portfolio-option" type="button" role="tab" aria-selected="true" aria-controls="portfolioDetail" id="project-tab-ai-workflows" data-project="ai-workflows">
-            <span class="portfolio-thumb" data-visual="ai" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="ai" aria-hidden="true">
+              <img src="assets/projects/retrospective-obsidian-plugin.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">AI-assisted developer workflows</span>
               <span class="portfolio-option-summary">AI support for documentation, onboarding, architecture, and team clarity.</span>
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-generative-ui" data-project="generative-ui">
-            <span class="portfolio-thumb" data-visual="ui" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="ui" aria-hidden="true">
+              <img src="assets/projects/generative-ui-enterprise.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">Generative UI for enterprise applications</span>
               <span class="portfolio-option-summary">AI agents composing interfaces from approved component boundaries.</span>
@@ -1910,14 +1936,18 @@
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-productivity-tools" data-project="productivity-tools">
-            <span class="portfolio-thumb" data-visual="productivity" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="productivity" aria-hidden="true">
+              <img src="assets/projects/tomato-focus.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">Personal productivity and knowledge tools</span>
               <span class="portfolio-option-summary">Small local-first tools shaped around real personal routines.</span>
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-music-research" data-project="music-research">
-            <span class="portfolio-thumb" data-visual="music" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="music" aria-hidden="true">
+              <img src="assets/projects/music-recommendation-playlist-research.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">Music recommendation and playlist research</span>
               <span class="portfolio-option-summary">Research around rediscovery, serendipity, and listening histories.</span>
@@ -1966,7 +1996,7 @@
                 </div>
               </div>
             </div>
-            <p class="portfolio-note">Visuals are abstract CSS placeholders for now; real screenshots can replace them later.</p>
+            <p class="portfolio-note">Some project visuals use real screenshots or generated images; the remaining themes use abstract CSS placeholders until real screenshots are available.</p>
           </div>
         </article>
       </div>
@@ -2401,6 +2431,10 @@
       'ai-workflows': {
         tabId: 'project-tab-ai-workflows',
         visual: 'ai',
+        image: {
+          src: 'assets/projects/retrospective-obsidian-plugin.webp',
+          alt: 'Screenshot of the Retrospective Obsidian Plugin generating a retrospective summary from work notes.'
+        },
         category: 'Work / Exploration',
         title: 'AI-assisted developer workflows',
         description: 'Exploring how AI can support software teams beyond code completion: documentation, repository understanding, onboarding, architectural analysis, task planning, and retrospective summaries.',
@@ -2418,6 +2452,10 @@
       'generative-ui': {
         tabId: 'project-tab-generative-ui',
         visual: 'ui',
+        image: {
+          src: 'assets/projects/generative-ui-enterprise.webp',
+          alt: 'Abstract illustration of an AI agent composing enterprise UI components into a dashboard interface.'
+        },
         category: 'Exploration',
         title: 'Generative UI for enterprise applications',
         description: 'Exploring how AI agents could compose user interfaces from approved components rather than generating arbitrary UI code.',
@@ -2448,6 +2486,10 @@
       'productivity-tools': {
         tabId: 'project-tab-productivity-tools',
         visual: 'productivity',
+        image: {
+          src: 'assets/projects/tomato-focus.webp',
+          alt: 'Screenshot of the Tomato Focus timer interface showing a focused work session.'
+        },
         category: 'Personal Tools',
         title: 'Personal productivity and knowledge tools',
         description: 'Small tools for daily work logging, sprint retrospective preparation, focus sessions, idea capture, and voice-based notes.',
@@ -2465,6 +2507,10 @@
       'music-research': {
         tabId: 'project-tab-music-research',
         visual: 'music',
+        image: {
+          src: 'assets/projects/music-recommendation-playlist-research.webp',
+          alt: 'Abstract music discovery interface showing listening history, artist networks, smart playlists, and a vinyl record.'
+        },
         category: 'Research / Music',
         title: 'Music recommendation and playlist research',
         description: 'Research around playlist creation, music recommendation, rediscovery, serendipity, and interactive exploration of listening histories.',
@@ -2537,12 +2583,27 @@
       if (!project || !portfolioDetail) return;
 
       const activeButton = document.querySelector(`.portfolio-option[data-project="${projectId}"]`);
+      const visual = portfolioDetail.querySelector('.portfolio-visual');
       portfolioButtons.forEach(button => {
         button.setAttribute('aria-selected', String(button === activeButton));
       });
 
       portfolioDetail.setAttribute('aria-labelledby', project.tabId);
-      portfolioDetail.querySelector('.portfolio-visual').dataset.visual = project.visual;
+      visual.dataset.visual = project.visual;
+      visual.classList.toggle('has-image', Boolean(project.image));
+      visual.replaceChildren();
+      if (project.image) {
+        const image = document.createElement('img');
+        image.className = 'portfolio-image';
+        image.src = project.image.src;
+        image.alt = project.image.alt;
+        image.loading = 'eager';
+        image.decoding = 'async';
+        visual.removeAttribute('aria-hidden');
+        visual.appendChild(image);
+      } else {
+        visual.setAttribute('aria-hidden', 'true');
+      }
       portfolioDetail.querySelector('.portfolio-meta').textContent = project.category;
       portfolioDetail.querySelector('.portfolio-title').textContent = project.title;
       portfolioDetail.querySelector('.portfolio-desc').textContent = project.description;
