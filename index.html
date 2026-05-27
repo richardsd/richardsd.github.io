@@ -1278,10 +1278,6 @@
       object-position: 50% 45%;
     }
 
-    .portfolio-thumb[data-visual="voice"].has-image .portfolio-image {
-      object-position: 50% 42%;
-    }
-
     .portfolio-thumb[data-visual="architecture"].has-image .portfolio-image {
       transform: scale(1.46);
       transform-origin: 50% 40%;
@@ -1987,9 +1983,7 @@
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-voice-local" data-project="voice-local">
-            <span class="portfolio-thumb has-image" data-visual="voice" aria-hidden="true">
-              <img src="assets/projects/retrospective-obsidian-plugin.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
-            </span>
+            <span class="portfolio-thumb" data-visual="voice" aria-hidden="true"></span>
             <span>
               <span class="portfolio-option-title">Voice and local-first experiments</span>
               <span class="portfolio-option-summary">Voice capture, local transcription, and lightweight note-taking.</span>
@@ -2566,10 +2560,6 @@
       'voice-local': {
         tabId: 'project-tab-voice-local',
         visual: 'voice',
-        image: {
-          src: 'assets/projects/retrospective-obsidian-plugin.webp',
-          alt: 'Screenshot of the Retrospective Obsidian Plugin generating a retrospective summary from work notes.'
-        },
         category: 'Personal Tools',
         title: 'Voice and local-first experiments',
         description: 'Experiments around voice capture, local transcription, mobile/wearable interactions, and lightweight AI-assisted note-taking.',
