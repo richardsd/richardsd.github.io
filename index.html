@@ -1265,6 +1265,10 @@
       background: linear-gradient(135deg, var(--bg-3), var(--surface));
     }
 
+    .portfolio-thumb[data-visual="productivity"].has-image .portfolio-image {
+      object-position: 72% 50%;
+    }
+
     .portfolio-thumb[data-visual="ai"].has-image .portfolio-image {
       object-position: 50% 47%;
       transform: scale(1.65);
@@ -1276,6 +1280,22 @@
 
     .portfolio-visual[data-visual="ai"].has-image .portfolio-image {
       object-position: 50% 45%;
+    }
+
+    .portfolio-thumb[data-visual="ui"].has-image .portfolio-image {
+      object-position: 43% 47%;
+      transform: scale(1.18);
+      transform-origin: 43% 47%;
+    }
+
+    .portfolio-visual[data-visual="ui"].has-image {
+      background: #020510;
+    }
+
+    .portfolio-visual[data-visual="ui"].has-image .portfolio-image {
+      object-fit: cover;
+      object-position: 50% 48%;
+      background: #020510;
     }
 
     .portfolio-thumb[data-visual="architecture"].has-image .portfolio-image {
@@ -1290,6 +1310,19 @@
     .portfolio-visual[data-visual="architecture"].has-image .portfolio-image {
       object-fit: contain;
       background: #030713;
+    }
+
+    .portfolio-thumb[data-visual="voice"].has-image .portfolio-image {
+      object-position: 28% 46%;
+    }
+
+    .portfolio-visual[data-visual="voice"].has-image {
+      background: #080e14;
+    }
+
+    .portfolio-visual[data-visual="voice"].has-image .portfolio-image {
+      object-fit: contain;
+      background: #080e14;
     }
 
     .portfolio-option-title {
@@ -1948,7 +1981,7 @@
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-generative-ui" data-project="generative-ui">
             <span class="portfolio-thumb has-image" data-visual="ui" aria-hidden="true">
-              <img src="assets/projects/generative-ui-enterprise.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+              <img src="assets/projects/generative-ui-on-demand-composer.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
             </span>
             <span>
               <span class="portfolio-option-title">Generative UI for enterprise applications</span>
@@ -1966,7 +1999,7 @@
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-productivity-tools" data-project="productivity-tools">
             <span class="portfolio-thumb has-image" data-visual="productivity" aria-hidden="true">
-              <img src="assets/projects/tomato-focus.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+              <img src="assets/projects/personal-productivity-knowledge-tools.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
             </span>
             <span>
               <span class="portfolio-option-title">Personal productivity and knowledge tools</span>
@@ -1983,7 +2016,9 @@
             </span>
           </button>
           <button class="portfolio-option" type="button" role="tab" aria-selected="false" aria-controls="portfolioDetail" id="project-tab-voice-local" data-project="voice-local">
-            <span class="portfolio-thumb" data-visual="voice" aria-hidden="true"></span>
+            <span class="portfolio-thumb has-image" data-visual="voice" aria-hidden="true">
+              <img src="assets/projects/voice-local-first-experiments.webp" alt="" class="portfolio-image" loading="lazy" decoding="async" />
+            </span>
             <span>
               <span class="portfolio-option-title">Voice and local-first experiments</span>
               <span class="portfolio-option-summary">Voice capture, local transcription, and lightweight note-taking.</span>
@@ -2483,13 +2518,13 @@
         tabId: 'project-tab-generative-ui',
         visual: 'ui',
         image: {
-          src: 'assets/projects/generative-ui-enterprise.webp',
-          alt: 'Abstract illustration of an AI agent composing enterprise UI components into a dashboard interface.'
+          src: 'assets/projects/generative-ui-on-demand-composer.webp',
+          alt: 'Illustration of a user request flowing into an agent composer that builds an on-demand enterprise interface from reusable UI components.'
         },
         category: 'Exploration',
         title: 'Generative UI for enterprise applications',
         description: 'Exploring how AI agents could compose user interfaces from approved components rather than generating arbitrary UI code.',
-        tags: ['Generative UI', 'Angular', 'Design Systems', 'Agents'],
+        tags: ['Generative UI', 'AG-UI', 'A2UI', 'Design Systems', 'Agents'],
         highlights: [
           'Component APIs as orchestration boundaries',
           'Recipes and adapters for safe UI composition',
@@ -2521,8 +2556,8 @@
         tabId: 'project-tab-productivity-tools',
         visual: 'productivity',
         image: {
-          src: 'assets/projects/tomato-focus.webp',
-          alt: 'Screenshot of the Tomato Focus timer interface showing a focused work session.'
+          src: 'assets/projects/personal-productivity-knowledge-tools.webp',
+          alt: 'Composite screenshot of personal productivity tools including a focus timer and retrospective note-taking workflow.'
         },
         category: 'Personal Tools',
         title: 'Personal productivity and knowledge tools',
@@ -2560,6 +2595,10 @@
       'voice-local': {
         tabId: 'project-tab-voice-local',
         visual: 'voice',
+        image: {
+          src: 'assets/projects/voice-local-first-experiments.webp',
+          alt: 'Screenshot of a voice capture and local-first note-taking experiment.'
+        },
         category: 'Personal Tools',
         title: 'Voice and local-first experiments',
         description: 'Experiments around voice capture, local transcription, mobile/wearable interactions, and lightweight AI-assisted note-taking.',
