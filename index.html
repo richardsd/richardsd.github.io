@@ -1261,12 +1261,13 @@
     }
 
     .portfolio-visual[data-visual="productivity"].has-image .portfolio-image {
-      object-fit: contain;
+      object-fit: cover;
+      object-position: 54% 49%;
       background: linear-gradient(135deg, var(--bg-3), var(--surface));
     }
 
     .portfolio-thumb[data-visual="productivity"].has-image .portfolio-image {
-      object-position: 72% 50%;
+      object-position: 58% 50%;
     }
 
     .portfolio-thumb[data-visual="ai"].has-image .portfolio-image {
@@ -1313,7 +1314,7 @@
     }
 
     .portfolio-thumb[data-visual="voice"].has-image .portfolio-image {
-      object-position: 28% 46%;
+      object-position: 38% 47%;
     }
 
     .portfolio-visual[data-visual="voice"].has-image {
@@ -1321,7 +1322,8 @@
     }
 
     .portfolio-visual[data-visual="voice"].has-image .portfolio-image {
-      object-fit: contain;
+      object-fit: cover;
+      object-position: 35% 48%;
       background: #080e14;
     }
 
@@ -2057,9 +2059,7 @@
                 <p class="portfolio-outcome">
                   Helps teams reduce friction, improve clarity, and use AI in grounded, useful ways.
                 </p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/richardsd/retrospective-obsidian-plugin" target="_blank" rel="noopener noreferrer" class="portfolio-link">GitHub ↗</a>
-                </div>
+                <div class="portfolio-links" hidden></div>
               </div>
             </div>
           </div>
@@ -2510,9 +2510,7 @@
           'Automation for repetitive engineering work'
         ],
         outcome: 'Helps teams reduce friction, improve clarity, and use AI in grounded, useful ways.',
-        links: [
-          { label: 'GitHub', url: 'https://github.com/richardsd/retrospective-obsidian-plugin' }
-        ]
+        links: []
       },
       'generative-ui': {
         tabId: 'project-tab-generative-ui',
@@ -2570,7 +2568,8 @@
         ],
         outcome: 'Turns everyday routines into practical experiments without losing simplicity.',
         links: [
-          { label: 'GitHub', url: 'https://github.com/richardsd/tomato-focus-chrome-extension' }
+          { label: 'Tomato Focus', url: 'https://github.com/richardsd/tomato-focus-chrome-extension' },
+          { label: 'Retrospective Plugin', url: 'https://github.com/richardsd/retrospective-obsidian-plugin' }
         ]
       },
       'music-research': {
