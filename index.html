@@ -733,6 +733,23 @@
       font-size: 0.84rem;
     }
 
+    #care .about-grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    }
+
+    #care .section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    #care .about-text p {
+      margin-bottom: 1rem;
+    }
+
+    #care .about-lead {
+      color: var(--text-primary);
+      font-size: 1.04rem;
+    }
+
     /* Languages */
     .language-note {
       margin-top: 2rem;
@@ -1770,6 +1787,7 @@
       }
       .hero { padding: 8rem 2rem 4rem; }
       .hero-card { max-width: 400px; }
+      #care .about-grid,
       .about-grid { grid-template-columns: 1fr; }
       .edu-grid { grid-template-columns: 1fr 1fr; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
@@ -1909,50 +1927,60 @@
     <div class="section-inner">
       <div class="section-header reveal">
         <span class="section-eyebrow">01 / What I care about</span>
-        <h2 class="section-title">Clear systems,<br/>quietly useful software.</h2>
-        <p class="section-subtitle">
-          The work that keeps pulling my attention back: software that removes friction,
-          connects people to content, and gives developers better ways to think.
-        </p>
+        <h2 class="section-title">Where ideas<br/>start to take shape.</h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal reveal-delay-1">
-          <p>
-            I am a <strong>Senior Software Engineer</strong> based in Lisbon, Portugal, focused on frontend architecture,
-            enterprise content platforms, and the tooling around how software teams work. I like UI layers that are
-            expressive without being fragile: Angular and TypeScript applications, reusable component systems,
-            backend-agnostic screens, and content services that stay understandable as products grow.
+          <p class="about-lead">
+            What keeps pulling me back to engineering is exploration.
           </p>
           <p>
-            I care about <strong>reducing friction</strong>. Sometimes that means a design-system-aware frontend
-            platform. Sometimes it means better developer documentation, a sharper test suite, or a small tool that
-            turns messy notes into something useful. More recently, it also means exploring AI-assisted developer
-            workflows, agent-based tooling, and generative UI as practical extensions of how teams build software.
+            I enjoy the moment when an idea is still open: when there is space to investigate, sketch an architecture,
+            build a prototype, try a new technology, or test a solution that may later be discarded. That kind of
+            exploration is not a side activity for me; it is one of the ways good software starts to take shape.
           </p>
           <p>
-            That same curiosity runs outside code: music, concerts, festivals, languages, travel, and personal
-            knowledge systems. I keep coming back to tools for reflection, creativity, communication, and
-            self-improvement because good software is rarely just about code. It is about shared understanding.
+            I am especially drawn to product-facing engineering: interfaces, tools, workflows, and systems that people
+            can actually use. A solution starts to feel right when the UI is clear, the experience feels natural, the
+            visual details support the task, and the underlying structure makes the product easier to evolve.
+          </p>
+          <p>
+            Proofs of concept are where I often find the most energy. They make possibilities visible. They turn
+            abstract discussions into something people can react to, question, improve, or decide not to pursue. I like
+            that space between research and implementation, where the goal is not only to ship, but to understand what
+            could be built and why it might matter.
+          </p>
+          <p>
+            That is also why AI-assisted workflows feel so exciting to me right now. They make it possible to explore
+            ideas that would previously have stayed on paper — not because they were technically impossible, but because
+            there was never enough time to try them properly. At the same time, they force us to rethink how we work,
+            how we keep up, and how much of software engineering is changing around us.
+          </p>
+          <p>
+            I do not see myself as the most traditional kind of software engineer. I like implementing, but I also like
+            questioning, connecting ideas, improving experiences, building tools, and helping others move faster. The
+            work that excites me most sits somewhere between engineering, experimentation, product thinking, and
+            creative exploration.
           </p>
 
         </div>
 
         <div class="about-stats reveal reveal-delay-2">
           <div class="stat-card">
-            <div class="stat-number">Flow</div>
-            <div class="stat-label">Software that reduces friction</div>
+            <div class="stat-number">Explore</div>
+            <div class="stat-label">Trying ideas before they become commitments</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">UI</div>
-            <div class="stat-label">Frontend architecture & design systems</div>
+            <div class="stat-number">Shape</div>
+            <div class="stat-label">Turning possibilities into usable interfaces</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">AI</div>
-            <div class="stat-label">Developer workflows & generative UI</div>
+            <div class="stat-number">Connect</div>
+            <div class="stat-label">Linking architecture, tools, and people</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">Notes</div>
-            <div class="stat-label">Local-first tools & knowledge systems</div>
+            <div class="stat-number">Amplify</div>
+            <div class="stat-label">Using AI to make exploration faster</div>
           </div>
         </div>
       </div>
